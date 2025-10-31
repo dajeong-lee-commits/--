@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url("reset.css");
+@import url("../font/font.css");
 html {
   font-size: 62.5%;
 }
@@ -41,14 +42,18 @@ p {
   transition: 0.2s;
 }
 
+#footer .inner,
 .section .inner {
   max-width: 1200px;
-  width: calc(100% - 360px);
+  width: 100%;
+  width: calc(100% - 80px);
   margin: 0 auto;
 }
+#footer .inner .title_wrap,
 .section .inner .title_wrap {
   text-align: center;
 }
+#footer .inner .text p,
 .section .inner .text p {
   text-align: center;
 }
@@ -220,7 +225,7 @@ p {
 }
 
 .section03 {
-  padding: 20rem 0 0;
+  padding: 20rem 0 20rem;
 }
 .section03 .inner .title_wrap h2 {
   margin-bottom: 4rem;
@@ -272,4 +277,45 @@ p {
 .section03 .inner .title_wrap .swiper.mySwiper .swiper-wrapper .swiper-slide a .product_info .price del {
   font-size: 1.2rem;
   color: #888888;
+}
+
+#footer {
+  background-color: #FEF5E6;
+  padding: 40px 0;
+}
+#footer .inner {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+#footer .inner .footer-left .footer_logo-inline {
+  width: 102px;
+  height: 16px;
+  display: block;
+  margin-bottom: 10px;
+}
+#footer .inner .footer-left .footer_logo-inline img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#footer .inner .footer-left p {
+  font-size: 1.3rem;
+}
+#footer .inner .footer-right {
+  display: flex;
+  gap: 4rem;
+}
+#footer .inner .footer-right li .depth-01 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+#footer .inner .footer-right li .depth-02 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
 }/*# sourceMappingURL=main.css.map */

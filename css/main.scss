@@ -1,5 +1,7 @@
 @charset "utf-8";
 @import url("reset.css");
+@import url("../font/font.css");
+
 
 html {
     font-size: 62.5%;
@@ -40,11 +42,11 @@ p {
     color: white;
     transition: 0.2s;
 }
-
+#footer .inner,
 .section .inner {
     max-width: 1200px;
     width: 100%;
-    /* width: calc(100% - 80px); */
+    width: calc(100% - 80px);
     margin: 0 auto;
     .title_wrap {
         text-align: center;
@@ -94,7 +96,7 @@ p {
             .gnb {
                 display: flex;
                 gap: 2rem;
-                
+
                 > li {
                     /* position: relative; */
                     .depth01-inline {
@@ -115,7 +117,6 @@ p {
                                 line-height: 34px;
                                 font-size: 1.4rem;
                                 display: block;
-                                
                             }
                         }
                     }
@@ -231,7 +232,7 @@ p {
     }
 }
 .section03 {
-    padding: 20rem 0 0;
+    padding: 20rem 0 20rem;
     .inner {
         .title_wrap {
             h2 {
@@ -291,6 +292,48 @@ p {
                             }
                         }
                     }
+                }
+            }
+        }
+    }
+}
+
+#footer {
+    background-color: #FEF5E6;
+    padding: 40px 0;
+    .inner {
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.4rem;
+        font-weight: 400;
+        .footer-left {
+            .footer_logo-inline {
+                width: 102px;
+                height: 16px;
+                display: block;
+                margin-bottom: 10px;
+                
+                img {
+                    @include imgBox;
+                }
+            }
+            p {
+                font-size: 1.3rem;
+            }
+        }
+        .footer-right {
+            display: flex;
+            gap: 4rem;
+            li {
+                .depth-01 {
+                    font-size: 1.6rem;
+                    font-weight: 700;
+                    margin-bottom: 1rem;
+                }
+                .depth-02 {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.4rem
                 }
             }
         }
