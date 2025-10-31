@@ -43,7 +43,8 @@ p {
 
 .section .inner {
     max-width: 1200px;
-    width: calc(100% - 360px);
+    width: 100%;
+    /* width: calc(100% - 80px); */
     margin: 0 auto;
     .title_wrap {
         text-align: center;
