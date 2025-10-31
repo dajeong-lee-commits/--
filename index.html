@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whipped</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.scss">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        window.onload = () => {
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 4,
+                spaceBetween: 20,
+                scrollbar: {
+                    el: ".swiper-scrollbar",
+                    hide: true,
+                },
+                breakpoints: {
+                    1024: { slidesPerView: 4 }, // 데스크탑
+                    768: { slidesPerView: 2 }, // 태블릿
+                    480: { slidesPerView: 1 }, // 모바일
+                },
+            });//section-03 베스트 상품 슬라이드
+        };
+    </script>
+
+</head>
+
+<body>
+    <header id="header">
+        <div class="inner">
+            <h1 class="logo">
+                <a href="#"><img src="img/icon/BI_logo_WHIPPED.svg" alt=""></a>
+            </h1>
+            <nav class="nav">
+                <ul class="gnb">
+                    <li>
+                        <a href="#" class="depth01-inline">Brand</a>
+                        <ul class="depth-02">
+                            <li><a href="#">Brand Story</a></li>
+                            <li><a href="#">Membership</a></li>
+                            <li><a href="#">Flagship</a></li>
+                        </ul><!-- .depth-02 end -->
+                    </li>
+                    <li>
+                        <a href="#" class="depth01-inline">Shop</a>
+                        <ul class="depth-02">
+                            <li><a href="#">New</a></li>
+                            <li><a href="#">Best</a></li>
+                            <li><a href="#">Sale</a></li>
+                            <li><a href="#">All</a></li>
+                            <li><a href="#">Cleanser</a></li>
+                            <li><a href="#">Pack Scrub</a></li>
+                            <li><a href="#">Hair</a></li>
+                            <li><a href="#">Body</a></li>
+                            <li><a href="#">Skin care</a></li>
+                            <li><a href="#">Set</a></li>
+                            <li><a href="#">Goods</a></li>
+                        </ul><!-- .depth-02 end -->
+                    </li>
+                    <li>
+                        <a href="#" class="depth01-inline">Community</a>
+                        <ul class="depth-02">
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">사용후기</a></li>
+                        </ul><!-- .depth-02 end -->
+                    </li>
+
+                </ul><!-- .gnb end -->
+            </nav><!-- .nav end -->
+            <div class="util">
+                <ul class="usermenu">
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Join</a></li>
+                </ul><!-- .usermenu end -->
+                <form action="#" method="get" class="search_box">
+                    <input class="input_txt" type="text">
+                    <button class="search_btn-inline">
+                        <img src="img/icon/icon_search.svg" alt="">
+                    </button><!-- .search_btn end -->
+                </form>
+                <ul class="icon_menu">
+                    <li><button class="lang"><img src="img/icon/icon_cart.svg" alt=""></button></li>
+                    <li><a href="#"><img src="img/icon/icon-lang.svg" alt=""></a></li>
+                </ul><!-- . -->
+            </div><!-- .util end -->
+        </div><!-- .inner end -->
+    </header><!-- #header end -->
+    <main id="main">
+        <section class="main_visual">
+            <div class="inner">
+                <!--             <iframe src="https://player.vimeo.com/video/996533426?background=1&autoplay=0&loop=1&muted=1"
+                    frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
+                    style="position:fixed; inset:0; width:100%; height:100%; z-index:-1; pointer-events:none;">
+                </iframe> -->
+                <img src="img/main/main.png" alt="">
+            </div><!-- .inner end -->
+        </section><!-- .main end -->
+
+        <section class="section section01 section01and02">
+            <div class="inner">
+                <div class="title_wrap">
+                    <h2>Brand Story</h2>
+                    <p>따스했던 추억 한 조각이 떠오르는 힐링 레시피, WHIPPED</p>
+                </div><!-- .title_wrap end -->
+                <div class="text">
+                    <p>달콤한 생일 케이크를 베어 물었을 때의 부드러운 휘핑 크림처럼,<br />놀이공원에의 더위를 식혀준 쫀쫀한 젤라또 아이스크림처럼,<br />당신이 잊고 있었던, 포근하고
+                        행복했던
+                        순간을 돌려 드리기 위해 휩드는 태어났습니다.</p>
+                </div>
+                <a href="#" class="main_btn-inline ">제품스토리</a>
+                <div class="image_wrap">
+                    <img src="img/img2.jpg" alt="" class="img_left-inline">
+                    <img src="img/img1.jpg" alt="" class="img_right-inline">
+                </div><!-- .image_wrap end -->
+            </div><!-- .inner end -->
+        </section><!-- .section01 end -->
+
+        <section class="section section02 section01and02">
+            <div class="inner">
+                <div class="title_wrap">
+                    <h2>Mother-made <br />Evoke a memory</h2>
+                    <p>따스했던 추억 한 조각이 떠오르는 힐링 레시피, WHIPPED</p>
+                </div><!-- .title_wrap end -->
+                <div class="text">
+                    <p>엄마가 만들어 주셨던 새하얀 케이크에는 가장 신선한 재료와 정성어린 레시피, 딸에 대한 사랑이 가득 담겨 있었어요.<br />베이커리에서 영감을 받은 레시피로, 100% 비건
+                        재료와
+                        특허 포뮬러가 만나 피부에 건강한 휴식을 선물합니다</p>
+                </div>
+                <a href="#" class="main_btn-inline">원료스토리</a>
+                <div class="image_wrap">
+                    <img src="img/img2.jpg" alt="" class="img_left-inline">
+                    <img src="img/img1.jpg" alt="" class="img_right-inline">
+                </div><!-- .image_wrap end -->
+            </div><!-- .inner end -->
+        </section><!-- .section02 end -->
+        <section class="section section03">
+            <div class="inner">
+                <div class="title_wrap">
+                    <h2>BEST PRODUCT</h2>
+                    <!-- Swiper -->
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide item">
+                                <a href="#">
+                                    <div class="product_img">
+                                        <img src="img/section03/best01.jpg" alt="">
+                                        <div class="badge_container">
+                                            <span class="badge_official-inline"></span>
+                                            <span class="badge_vegan-inline-inline"></span>
+                                        </div><!-- .badge end -->
+                                        <button class="btn-cart">
+                                            <img src="img/icon/icon_cart.svg" alt="">
+                                        </button><!-- 'btn-cart end' -->
+                                    </div><!-- .product_img end -->
+                                    <div class="product_info">
+                                        <h3>휩드 팩클렌저 튜브 5+1</h3>
+                                        <span>MEMBER</span>
+                                        <div class="price">
+                                            <span class="discount-inline">30%</span>
+                                            <strong>121,800원</strong>
+                                            <del>174,000원</del>
+                                        </div><!-- .price end -->
+                                    </div><!-- .product_info end -->
+                                </a>
+                            </div><!-- .swiper-slide.item end -->
+
+
+                            <div class="swiper-slide item">
+                                <a href="#">
+                                    <div class="product_img">
+                                        <img src="img/section03/best02.jpg" alt="">
+                                        <div class="badge_container">
+                                            <span class="badge_official-inline"></span>
+                                            <span class="badge_vegan-inline"></span>
+                                        </div><!-- .badge end -->
+                                        <button class="btn-cart">
+                                            <img src="img/icon/icon_cart.svg" alt="">
+                                        </button><!-- 'btn-cart end' -->
+                                    </div><!-- .product_img end -->
+                                    <div class="product_info">
+                                        <h3>휩드 팩클랜저 단지 5+1</h3>
+                                        <span>MEMBER</span>
+                                        <div class="price">
+                                            <span class="discount-inline">30%</span>
+                                            <strong>100,800원</strong>
+                                            <del>144,000원</del>
+                                        </div><!-- .price end -->
+                                    </div><!-- .product_info end -->
+                                </a>
+                            </div><!-- .swiper-slide.item end -->
+
+                            <div class="swiper-slide item">
+                                <a href="#">
+                                    <div class="product_img">
+                                        <img src="img/section03/best03.png" alt="">
+                                        <div class="badge_container">
+                                            <span class="badge_official-inline"></span>
+                                            <span class="badge_vegan-inline"></span>
+                                        </div><!-- .badge end -->
+                                        <button class="btn-cart">
+                                            <img src="img/icon/icon_cart.svg" alt="">
+                                        </button><!-- 'btn-cart end' -->
+                                    </div><!-- .product_img end -->
+                                    <div class="product_info">
+                                        <h3>[여행용 팩스크럽 25g 증정] 휩드 팩클렌저 튜브 3종 골라담기</h3>
+                                        <div class="price">
+                                            <span class="discount-inline">20%</span>
+                                            <strong>69,600원</strong>
+                                            <del>69,600원</del>
+                                        </div><!-- .price end -->
+                                    </div><!-- .product_info end -->
+                                </a>
+                            </div><!-- .swiper-slide.item end -->
+
+                            <div class="swiper-slide item">
+                                <a href="#">
+                                    <div class="product_img">
+                                        <img src="img/section03/best04.jpg" alt="">
+                                        <div class="badge_container">
+                                            <span class="badge_official-inline"></span>
+                                            <span class="badge_vegan-inline"></span>
+                                        </div><!-- .badge end -->
+                                        <button class="btn-cart">
+                                            <img src="img/icon/icon_cart.svg" alt="">
+                                        </button><!-- 'btn-cart end' -->
+                                    </div><!-- .product_img end -->
+                                    <div class="product_info">
+                                        <h3>휩드 팩클랜저 튜브 2종 골라담기</h3>
+                                        <div class="price">
+                                            <span class="discount-inline">15%</span>
+                                            <strong>49,300원</strong>
+                                            <del>58,000원</del>
+                                        </div><!-- .price end -->
+                                    </div><!-- .product_info end -->
+                                </a>
+                            </div><!-- .swiper-slide.item end -->
+
+                            <div class="swiper-slide item">
+                                <a href="#">
+                                    <div class="product_img">
+                                        <img src="img/section03/best05.png" alt="">
+                                        <div class="badge_container">
+                                            <span class="badge_official-inline"></span>
+                                            <span class="badge_vegan-inline"></span>
+                                        </div><!-- .badge end -->
+                                        <button class="btn-cart">
+                                            <img src="img/icon/icon_cart.svg" alt="">
+                                        </button><!-- 'btn-cart end' -->
+                                    </div><!-- .product_img end -->
+                                    <div class="product_info">
+                                        <h3>[여행용 팩스크럽 25g 증정] 휩드 팩스크럽 2종 골라담기</h3>
+                                        <div class="price">
+                                            <span class="discount-inline">20%</span>
+                                            <strong>48,000원</strong>
+                                            <del>60,000원</del>
+                                        </div><!-- .price end -->
+                                    </div><!-- .product_info end -->
+                                </a>
+                            </div><!-- .swiper-slide.item end -->
+
+                            <div class="swiper-slide item">
+                                <a href="#">
+                                    <div class="product_img">
+                                        <img src="img/section03/best06.jpg" alt="">
+                                        <div class="badge_container">
+                                            <span class="badge_official-inline"></span>
+                                            <span class="badge_vegan-inline"></span>
+                                        </div><!-- .badge end -->
+                                        <button class="btn-cart">
+                                            <img src="img/icon/icon_cart.svg" alt="">
+                                        </button><!-- 'btn-cart end' -->
+                                    </div><!-- .product_img end -->
+                                    <div class="product_info">
+                                        <h3>휩드 팩클렌저 단지 2종 골라담기</h3>
+                                        <div class="price">
+                                            <span class="discount-inline">15%</span>
+                                            <strong>40,800원</strong>
+                                            <del>48,000원</del>
+                                        </div><!-- .price end -->
+                                    </div><!-- .product_info end -->
+                                </a>
+                            </div><!-- .swiper-slide.item end -->
+
+                            <div class="swiper-slide item">
+                                <a href="#">
+                                    <div class="product_img">
+                                        <img src="img/section03/best07.png" alt="">
+                                        <div class="badge_container">
+                                            <span class="badge_official-inline"></span>
+                                            <span class="badge_vegan-inline"></span>
+                                        </div><!-- .badge end -->
+                                        <button class="btn-cart">
+                                            <img src="img/icon/icon_cart.svg" alt="">
+                                        </button><!-- 'btn-cart end' -->
+                                    </div><!-- .product_img end -->
+                                    <div class="product_info">
+                                        <h3>휩드 비건 토핑 바디버터 190g (3종 택1)</h3>
+                                        <div class="price">
+                                            <span class="discount-inline">10%</span>
+                                            <strong>30,600원</strong>
+                                            <del>34,000원</del>
+                                        </div><!-- .price end -->
+                                    </div><!-- .product_info end -->
+                                </a>
+                            </div><!-- .swiper-slide.item end -->
+
+                            <div class="swiper-slide item">
+                                <a href="#">
+                                    <div class="product_img">
+                                        <img src="img/section03/best08.jpg" alt="">
+                                        <div class="badge_container">
+                                            <span class="badge_official-inline"></span>
+                                            <span class="badge_vegan-inline"></span>
+                                        </div><!-- .badge end -->
+                                        <button class="btn-cart">
+                                            <img src="img/icon/icon_cart.svg" alt="">
+                                        </button><!-- 'btn-cart end' -->
+                                    </div><!-- .product_img end -->
+                                    <div class="product_info">
+                                        <h3>휩드 호호벤더 B5 비건 토핑 바디버터 190g</h3>
+                                        <div class="price">
+                                            <span class="discount-inline">10%</span>
+                                            <strong>30,600원</strong>
+                                            <del>34,000원</del>
+                                        </div><!-- .price end -->
+                                    </div><!-- .product_info end -->
+                                </a>
+                            </div><!-- .swiper-slide.item end -->
+
+                            <div class="swiper-slide item">
+                                <a href="#">
+                                    <div class="product_img">
+                                        <img src="img/section03/best09.jpg" alt="">
+                                        <div class="badge_container">
+                                            <span class="badge_official-inline"></span>
+                                            <span class="badge_vegan-inline"></span>
+                                        </div><!-- .badge end -->
+                                        <button class="btn-cart">
+                                            <img src="img/icon/icon_cart.svg" alt="">
+                                        </button><!-- 'btn-cart end' -->
+                                    </div><!-- .product_img end -->
+                                    <div class="product_info">
+                                        <h3>휩드 라보카도 비건 팩스크럽 210g</h3>
+                                        <div class="price">
+                                            <span class="discount-inline">10%</span>
+                                            <strong>27,000원</strong>
+                                            <del>30,000원</del>
+                                        </div><!-- .price end -->
+                                    </div><!-- .product_info end -->
+                                </a>
+                            </div><!-- .swiper-slide.item end -->
+
+                            <div class="swiper-slide item">
+                                <a href="#">
+                                    <div class="product_img">
+                                        <img src="img/section03/best10.jpg" alt="">
+                                        <div class="badge_container">
+                                            <span class="badge_official-inline"></span>
+                                            <span class="badge_vegan-inline"></span>
+                                        </div><!-- .badge end -->
+                                        <button class="btn-cart">
+                                            <img src="img/icon/icon_cart.svg" alt="">
+                                        </button><!-- 'btn-cart end' -->
+                                    </div><!-- .product_img end -->
+                                    <div class="product_info">
+                                        <h3>휩드 머그트리 비건 팩스크럽 210g</h3>
+                                        <div class="price">
+                                            <span class="discount-inline">10%</span>
+                                            <strong>27,000원</strong>
+                                            <del>30,000원</del>
+                                        </div><!-- .price end -->
+                                    </div><!-- .product_info end -->
+                                </a>
+                            </div><!-- .swiper-slide.item end -->
+
+                            <div class="swiper-slide item">
+                                <a href="#">
+                                    <div class="product_img">
+                                        <img src="img/section03/best11.jpg" alt="">
+                                        <div class="badge_container">
+                                            <span class="badge_official-inline"></span>
+                                            <span class="badge_vegan-inline"></span>
+                                        </div><!-- .badge end -->
+                                        <button class="btn-cart">
+                                            <img src="img/icon/icon_cart.svg" alt="">
+                                        </button><!-- 'btn-cart end' -->
+                                    </div><!-- .product_img end -->
+                                    <div class="product_info">
+                                        <h3>휩드 무화버터 비건 팩스크럽 210g</h3>
+                                        <div class="price">
+                                            <span class="discount-inline">10%</span>
+                                            <strong>27,000원</strong>
+                                            <del>30,000원</del>
+                                        </div><!-- .price end -->
+                                    </div><!-- .product_info end -->
+                                </a>
+                            </div><!-- .swiper-slide.item end -->
+
+                            <div class="swiper-slide item">
+                                <a href="#">
+                                    <div class="product_img">
+                                        <img src="img/section03/best12.jpg" alt="">
+                                        <div class="badge_container">
+                                            <span class="badge_official-inline"></span>
+                                            <span class="badge_vegan-inline"></span>
+                                        </div><!-- .badge end -->
+                                        <button class="btn-cart">
+                                            <img src="img/icon/icon_cart.svg" alt="">
+                                        </button><!-- 'btn-cart end' -->
+                                    </div><!-- .product_img end -->
+                                    <div class="product_info">
+                                        <h3>휩드 무화버터 비건 팩클렌저 130g</h3>
+                                        <div class="price">
+                                            <span class="discount-inline">10%</span>
+                                            <strong>26,100원</strong>
+                                            <del>29,000원</del>
+                                        </div><!-- .price end -->
+                                    </div><!-- .product_info end -->
+                                </a>
+                            </div><!-- .swiper-slide.item end -->
+
+                            <div class="swiper-slide item">
+                                <a href="#">
+                                    <div class="product_img">
+                                        <img src="img/section03/best13.jpg" alt="">
+                                        <div class="badge_container">
+                                            <span class="badge_official-inline"></span>
+                                            <span class="badge_vegan-inline"></span>
+                                        </div><!-- .badge end -->
+                                        <button class="btn-cart">
+                                            <img src="img/icon/icon_cart.svg" alt="">
+                                        </button><!-- 'btn-cart end' -->
+                                    </div><!-- .product_img end -->
+                                    <div class="product_info">
+                                        <h3>휩드 호호벤더 비건 팩클렌저 130g</h3>
+                                        <div class="price">
+                                            <span class="discount-inline">10%</span>
+                                            <strong>26,100원</strong>
+                                            <del>29,000원</del>
+                                        </div><!-- .price end -->
+                                    </div><!-- .product_info end -->
+                                </a>
+                            </div><!-- .swiper-slide.item end -->
+
+                            <div class="swiper-slide item">
+                                <a href="#">
+                                    <div class="product_img">
+                                        <img src="img/section03/best14.jpg" alt="">
+                                        <div class="badge_container">
+                                            <span class="badge_official-inline"></span>
+                                            <span class="badge_vegan-inline"></span>
+                                        </div><!-- .badge end -->
+                                        <button class="btn-cart">
+                                            <img src="img/icon/icon_cart.svg" alt="">
+                                        </button><!-- 'btn-cart end' -->
+                                    </div><!-- .product_img end -->
+                                    <div class="product_info">
+                                        <h3>휩드 딸바 비건 팩클렌저 130g</h3>
+                                        <div class="price">
+                                            <span class="discount-inline">10%</span>
+                                            <strong>26,100원</strong>
+                                            <del>29,000원</del>
+                                        </div><!-- .price end -->
+                                    </div><!-- .product_info end -->
+                                </a>
+                            </div><!-- .swiper-slide.item end -->
+
+                            <div class="swiper-slide item">
+                                <a href="#">
+                                    <div class="product_img">
+                                        <img src="img/section03/best15.jpg" alt="">
+                                        <div class="badge_container">
+                                            <span class="badge_official-inline"></span>
+                                            <span class="badge_vegan-inline"></span>
+                                        </div><!-- .badge end -->
+                                        <button class="btn-cart">
+                                            <img src="img/icon/icon_cart.svg" alt="">
+                                        </button><!-- 'btn-cart end' -->
+                                    </div><!-- .product_img end -->
+                                    <div class="product_info">
+                                        <h3>휩드 라보카도 비건 팩클렌저 130g</h3>
+                                        <div class="price">
+                                            <span class="discount-inline">10%</span>
+                                            <strong>26,100원</strong>
+                                            <del>29,000원</del>
+                                        </div><!-- .price end -->
+                                    </div><!-- .product_info end -->
+                                </a>
+                            </div><!-- .swiper-slide.item end -->
+
+                            <div class="swiper-slide item">
+                                <a href="#">
+                                    <div class="product_img">
+                                        <img src="img/section03/best16.jpg" alt="">
+                                        <div class="badge_container">
+                                            <span class="badge_official-inline"></span>
+                                            <span class="badge_vegan-inline"></span>
+                                        </div><!-- .badge end -->
+                                        <button class="btn-cart">
+                                            <img src="img/icon/icon_cart.svg" alt="">
+                                        </button><!-- 'btn-cart end' -->
+                                    </div><!-- .product_img end -->
+                                    <div class="product_info">
+                                        <h3>휩드 머그트리 비건 팩클렌저 130g</h3>
+                                        <div class="price">
+                                            <span class="discount-inline">10%</span>
+                                            <strong>26,100원</strong>
+                                            <del>29,000원</del>
+                                        </div><!-- .price end -->
+                                    </div><!-- .product_info end -->
+                                </a>
+                            </div><!-- .swiper-slide.item end -->
+
+                        </div><!-- .swiper-wrapper end -->
+                        <div class="swiper-scrollbar"></div>
+                    </div><!-- swiper mySwiper end -->
+                </div><!-- .title_wrap  -->
+
+
+            </div><!-- .inner end -->
+        </section><!-- .section03 end -->
+
+
+
+
+    </main><!-- .#main end -->
+
+
+
+    <footer id="footer">
+        <div class="inner">
+            <div class="footer-left">
+                <a href="#" class="footer_logo-inline"><img src="img/icon/BI_logo_WHIPPED.svg" alt=""></a>
+                <p>Copyright © Whipped.All rights reserved.</p>
+            </div><!-- .footer-left end -->
+            <ul class="footer-right">
+                <li>
+                    <div class="depth-01">Site map</div>
+                    <ul class="depth-02">
+                        <li><a href="#">Brand story</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Agreement</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="depth-01">Company info</div>
+                    <ul class="depth-02">
+                        <li><a href="#">상호명 : 주식회사 세모컴퍼니</a></li>
+                        <li><a href="#">대표 : 최솔</a></li>
+                        <li><a href="#">주소 : 서울 성동구 성수이로20길 16 제이케이타워 103호</a></li>
+                        <li><a href="#">사업자 등록번호 : 730-81-02087</a></li>
+                        <li><a href="#">통신판매신고번호 : 제2024-서울성동-0786호</a></li>
+                        <li><a href="#">이메일 : business@whipped.co.kr</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="depth-01">고객센터 운영시간</div>
+                    <ul class="depth-02">
+                        <li><a href="#">070-8654-0964</a></li>
+                        <li><a href="#">Mon-Thu : 10:00 - 17:00, Fri : 10:00 - 12:30<br />(점심시간 : 12:30 - 14:00, 주말 및
+                                공휴일
+                                휴무)</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="depth-01">Follow us</div>
+                    <ul class="depth-02">
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Youtube</a></li>
+                    </ul>
+                </li>
+            </ul><!-- .footer-right -->
+        </div><!-- .inner end -->
+    </footer><!-- .#footer end -->
+
+</body>
+
+</html>
