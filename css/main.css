@@ -146,8 +146,7 @@ p {
   outline: none;
 }
 #header .inner .util_pc .search_box .input_txt:focus-visible {
-  border-color: #3b82f6;
-  /* 예시: 파란 테두리 */
+  border-color: #3b82f6; /* 예시: 파란 테두리 */
   box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.4);
 }
 #header .inner .util_pc .search_box .input_txt:focus {
@@ -463,10 +462,6 @@ p {
   .section .inner {
     width: calc(100% - 40px);
     margin: 0 auto;
-  }
-  #main .main_visual .bg-video {
-    transform: rotate(90deg);
-    transform-origin: center center;
   }
   .section03 {
     padding: 6rem 0 6rem;
