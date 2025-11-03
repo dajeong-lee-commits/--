@@ -9,6 +9,22 @@
     <link rel="stylesheet" href="css/main.scss">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="lib/jquery-3.7.1.min.js"></script>
+    <script>
+        $(function () {
+            let depth1 = $('#header .inner .nav_pc .gnb>li');
+
+            depth1.on('mouseenter', function () {
+                $(this).children('.depth-02').stop().slideDown();
+
+            });
+            depth1.on('mouseleave', function () {
+                $(this).children('.depth-02').stop().hide()
+
+            });
+
+        });
+    </script>
     <script>
         window.onload = () => {
             var swiper = new Swiper(".mySwiper", {
@@ -35,7 +51,7 @@
             <h1 class="logo">
                 <a href="#"><img src="img/icon/BI_logo_WHIPPED.svg" alt=""></a>
             </h1>
-            <nav class="nav">
+            <nav class="nav_pc pc">
                 <ul class="gnb">
                     <li>
                         <a href="#" class="depth01-inline">Brand</a>
@@ -71,7 +87,7 @@
 
                 </ul><!-- .gnb end -->
             </nav><!-- .nav end -->
-            <div class="util">
+            <div class="util_pc pc">
                 <ul class="usermenu">
                     <li><a href="#">Login</a></li>
                     <li><a href="#">Join</a></li>
@@ -83,10 +99,65 @@
                     </button><!-- .search_btn end -->
                 </form>
                 <ul class="icon_menu">
-                    <li><button class="lang"><img src="img/icon/icon_cart.svg" alt=""></button></li>
+                    <li><button class="btn_cart"><img src="img/icon/icon_cart.svg" alt=""></button></li>
                     <li><a href="#"><img src="img/icon/icon-lang.svg" alt=""></a></li>
                 </ul><!-- . -->
             </div><!-- .util end -->
+            <button class="nav_btn mobile">
+                <img src="img/icon/icon_menu_mobile.svg" alt="">
+            </button><!-- .nav_btn mobile end -->
+            <nav class="nav_mobile mobile">
+                <ul class="gnb">
+                    <li>
+                        <a href="#" class="depth01-inline">Brand</a>
+                        <ul class="depth-02">
+                            <li><a href="#">Brand Story</a></li>
+                            <li><a href="#">Membership</a></li>
+                            <li><a href="#">Flagship</a></li>
+                        </ul><!-- .depth-02 end -->
+                    </li>
+                    <li>
+                        <a href="#" class="depth01-inline">Shop</a>
+                        <ul class="depth-02">
+                            <li><a href="#">New</a></li>
+                            <li><a href="#">Best</a></li>
+                            <li><a href="#">Sale</a></li>
+                            <li><a href="#">All</a></li>
+                            <li><a href="#">Cleanser</a></li>
+                            <li><a href="#">Pack Scrub</a></li>
+                            <li><a href="#">Hair</a></li>
+                            <li><a href="#">Body</a></li>
+                            <li><a href="#">Skin care</a></li>
+                            <li><a href="#">Set</a></li>
+                            <li><a href="#">Goods</a></li>
+                        </ul><!-- .depth-02 end -->
+                    </li>
+                    <li>
+                        <a href="#" class="depth01-inline">Community</a>
+                        <ul class="depth-02">
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">사용후기</a></li>
+                        </ul><!-- .depth-02 end -->
+                    </li>
+
+                </ul><!-- .gnb end -->
+                <div class="util_mobile mobile">
+                    <ul class="usermenu">
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">Join</a></li>
+                    </ul><!-- .usermenu end -->
+                    <form action="#" method="get" class="search_box">
+                        <input class="input_txt" type="text">
+                        <button class="search_btn-inline">
+                            <img src="img/icon/icon_search.svg" alt="">
+                        </button><!-- .search_btn end -->
+                    </form>
+                    <ul class="icon_menu">
+                        <li><button class="btn_cart"><img src="img/icon/icon_cart.svg" alt=""></button></li>
+                        <li><a href="#"><img src="img/icon/icon-lang.svg" alt=""></a></li>
+                    </ul><!-- . -->
+                </div><!-- .util end -->
+            </nav><!-- .nav_mobile mobile end -->
         </div><!-- .inner end -->
     </header><!-- #header end -->
     <main id="main">
@@ -107,7 +178,7 @@
                     <p>따스했던 추억 한 조각이 떠오르는 힐링 레시피, WHIPPED</p>
                 </div><!-- .title_wrap end -->
                 <div class="text">
-                    <p>달콤한 생일 케이크를 베어 물었을 때의 부드러운 휘핑 크림처럼,<br />놀이공원에의 더위를 식혀준 쫀쫀한 젤라또 아이스크림처럼,<br />당신이 잊고 있었던, 포근하고
+                    <p>달콤한 생일 케이크를 베어 물었을 때의 부드러운 크림처럼,<br />놀이공원에의 더위를 식혀준 쫀쫀한 젤라또 아이스크림처럼,<br />당신이 잊고 있었던, 포근하고
                         행복했던
                         순간을 돌려 드리기 위해 휩드는 태어났습니다.</p>
                 </div>
@@ -344,7 +415,7 @@
                                         </button><!-- 'btn-cart end' -->
                                     </div><!-- .product_img end -->
                                     <div class="product_info">
-                                        <h3>휩드 라보카도 비건 팩스크럽 210g</h3>
+                                        <h3>휩드 아보카도 비건 팩스크럽 210g</h3>
                                         <div class="price">
                                             <span class="discount-inline">10%</span>
                                             <strong>27,000원</strong>
