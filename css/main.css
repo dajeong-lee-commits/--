@@ -146,7 +146,8 @@ p {
   outline: none;
 }
 #header .inner .util_pc .search_box .input_txt:focus-visible {
-  border-color: #3b82f6; /* 예시: 파란 테두리 */
+  border-color: #3b82f6;
+  /* 예시: 파란 테두리 */
   box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.4);
 }
 #header .inner .util_pc .search_box .input_txt:focus {
@@ -214,6 +215,9 @@ p {
   min-width: 177.78vh;
   pointer-events: none;
   z-index: -1;
+}
+#main .main_visual .bg-video.mobile {
+  display: none;
 }
 
 .section01and02 .inner {
@@ -320,6 +324,8 @@ p {
 }
 .section03 .inner .title_wrap .swiper.mySwiper .swiper-wrapper .swiper-slide a .product_img .badge_container .badge_vegan-inline {
   background-color: #7fa06f;
+}
+.section03 .inner .title_wrap .swiper.mySwiper .swiper-wrapper .swiper-slide a .product_img .badge_container .badge_vegan-inline.double {
   margin-top: -0.8rem;
 }
 .section03 .inner .title_wrap .swiper.mySwiper .swiper-wrapper .swiper-slide a .product_img .btn-cart {
@@ -463,6 +469,66 @@ p {
     width: calc(100% - 40px);
     margin: 0 auto;
   }
+  #main .main_visual .bg-video.pc {
+    display: none;
+  }
+  #main .main_visual .bg-video.mobile {
+    display: block;
+  }
+  /* 다시쓰기 */
+  .section01and02 .inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+  }
+  .section01and02 .inner .title_wrap h2 {
+    margin-bottom: 0.4rem;
+  }
+  .section01and02 .inner .image_wrap {
+    position: relative;
+  }
+  .section01and02 .inner .image_wrap img {
+    position: absolute;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .section01 {
+    padding: 10rem 0 5rem;
+  }
+  .section01 .image_wrap {
+    width: 100%;
+    height: 354px;
+  }
+  .section01 .image_wrap .img_left-inline {
+    width: 84%;
+    height: 237px;
+  }
+  .section01 .image_wrap .img_right-inline {
+    width: 32%;
+    height: 234px;
+    bottom: 0;
+    right: 0;
+    border-radius: 200px;
+  }
+  .section02 .image_wrap {
+    width: 100%;
+    height: 493px;
+  }
+  .section02 .image_wrap .img_left-inline {
+    width: 44.16%;
+    height: 197px;
+    bottom: 0;
+    border-radius: 200px;
+    z-index: 1;
+  }
+  .section02 .image_wrap .img_right-inline {
+    width: 49%;
+    height: 394px;
+    left: 100%;
+    transform: translateX(-100%);
+  }
+  /* 다시쓰기 */
   .section03 {
     padding: 6rem 0 6rem;
   }
