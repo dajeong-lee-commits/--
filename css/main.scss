@@ -203,12 +203,20 @@ p {
 
 #main {
     .main_visual {
+        width: 100%;
         height: 100vh;
-        .inner {
+        position: relative;
+        overflow: hidden;
+
+        .bg-video {
+            position: absolute;
+            inset: 0; /* top:0; right:0; bottom:0; left:0; */
+            width: 100%;
             height: 100%;
-            img {
-                @include imgBox;
-            }
+            object-fit: cover; /* 좌우/상하 여백 제거 핵심 */
+            z-index: -1;
+            pointer-events: none;
+            display: block;
         }
     }
 }
@@ -318,7 +326,6 @@ p {
                                     .badge_vegan-inline {
                                         background-color: #7fa06f;
                                         margin-top: -0.8rem;
-                                       
                                     }
                                 }
                                 .btn-cart {
@@ -356,7 +363,7 @@ p {
                                     position: relative;
                                 }
                                 > span::before {
-                                    content: '';
+                                    content: "";
                                     width: 100%;
                                     height: 60%;
                                     bottom: 0;
@@ -487,7 +494,7 @@ p {
                     margin-bottom: 2rem;
                 }
                 .swiper.mySwiper {
-                   /*  padding-bottom: 20px; */
+                    /*  padding-bottom: 20px; */
                     .swiper-wrapper {
                         .swiper-slide {
                             a {
@@ -504,8 +511,6 @@ p {
                                             width: 44px;
                                             height: 44px;
                                         }
-                                    
-
                                     }
                                     .btn-cart {
                                         width: 36px;
