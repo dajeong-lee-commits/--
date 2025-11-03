@@ -28,19 +28,20 @@
     <script>
         window.onload = () => {
             var swiper = new Swiper(".mySwiper", {
-                slidesPerView: 2,
+                slidesPerView: 1,
                 spaceBetween: 16,
                 scrollbar: {
                     el: ".swiper-scrollbar",
-                    hide: true,
+                    hide: false,
                 },
                 breakpoints: {
                     1024: {
                         slidesPerView: 4,
                         spaceBetween: 24,
 
-                    }, // 데스크탑
-                    480: { slidesPerView: 3 }, // 모바일
+                    }, // 태블릿 1023이하 3열
+                    501: { slidesPerView: 3 }, // 모바일 320~500 2열 
+                    321: { slidesPerView: 2 }, // 모바일320이하 1열
                 },
             });//section-03 베스트 상품 슬라이드
         };
@@ -221,10 +222,9 @@
                             <div class="swiper-slide item">
                                 <a href="#">
                                     <div class="product_img">
-                                        <img src="img/section03/best01.jpg" alt="">
+                                        <img src="img/section03/best01.png" alt="">
                                         <div class="badge_container">
-                                            <span class="badge_official-inline"></span>
-                                            <span class="badge_vegan-inline-inline"></span>
+                                            <span class="badge_member-inline">Member</span>
                                         </div><!-- .badge end -->
                                         <button class="btn-cart">
                                             <img src="img/icon/icon_cart.svg" alt="">
@@ -246,10 +246,10 @@
                             <div class="swiper-slide item">
                                 <a href="#">
                                     <div class="product_img">
-                                        <img src="img/section03/best02.jpg" alt="">
+                                        <img src="img/section03/best02.png" alt="">
                                         <div class="badge_container">
-                                            <span class="badge_official-inline"></span>
-                                            <span class="badge_vegan-inline"></span>
+                                            <span class="badge_member-inline">Member</span>
+                                            <span class="badge_vegan-inline-inline">Vegan</span>
                                         </div><!-- .badge end -->
                                         <button class="btn-cart">
                                             <img src="img/icon/icon_cart.svg" alt="">
@@ -272,8 +272,6 @@
                                     <div class="product_img">
                                         <img src="img/section03/best03.png" alt="">
                                         <div class="badge_container">
-                                            <span class="badge_official-inline"></span>
-                                            <span class="badge_vegan-inline"></span>
                                         </div><!-- .badge end -->
                                         <button class="btn-cart">
                                             <img src="img/icon/icon_cart.svg" alt="">
@@ -293,10 +291,8 @@
                             <div class="swiper-slide item">
                                 <a href="#">
                                     <div class="product_img">
-                                        <img src="img/section03/best04.jpg" alt="">
+                                        <img src="img/section03/best04.png" alt="">
                                         <div class="badge_container">
-                                            <span class="badge_official-inline"></span>
-                                            <span class="badge_vegan-inline"></span>
                                         </div><!-- .badge end -->
                                         <button class="btn-cart">
                                             <img src="img/icon/icon_cart.svg" alt="">
@@ -318,8 +314,7 @@
                                     <div class="product_img">
                                         <img src="img/section03/best05.png" alt="">
                                         <div class="badge_container">
-                                            <span class="badge_official-inline"></span>
-                                            <span class="badge_vegan-inline"></span>
+                                            <span class="badge_vegan-inline-inline">Vegan</span>
                                         </div><!-- .badge end -->
                                         <button class="btn-cart">
                                             <img src="img/icon/icon_cart.svg" alt="">
@@ -339,7 +334,7 @@
                             <div class="swiper-slide item">
                                 <a href="#">
                                     <div class="product_img">
-                                        <img src="img/section03/best06.jpg" alt="">
+                                        <img src="img/section03/best06.png" alt="">
                                         <div class="badge_container">
                                             <span class="badge_official-inline"></span>
                                             <span class="badge_vegan-inline"></span>
@@ -364,8 +359,6 @@
                                     <div class="product_img">
                                         <img src="img/section03/best07.png" alt="">
                                         <div class="badge_container">
-                                            <span class="badge_official-inline"></span>
-                                            <span class="badge_vegan-inline"></span>
                                         </div><!-- .badge end -->
                                         <button class="btn-cart">
                                             <img src="img/icon/icon_cart.svg" alt="">
@@ -385,10 +378,8 @@
                             <div class="swiper-slide item">
                                 <a href="#">
                                     <div class="product_img">
-                                        <img src="img/section03/best08.jpg" alt="">
+                                        <img src="img/section03/best08.png" alt="">
                                         <div class="badge_container">
-                                            <span class="badge_official-inline"></span>
-                                            <span class="badge_vegan-inline"></span>
                                         </div><!-- .badge end -->
                                         <button class="btn-cart">
                                             <img src="img/icon/icon_cart.svg" alt="">
@@ -408,10 +399,8 @@
                             <div class="swiper-slide item">
                                 <a href="#">
                                     <div class="product_img">
-                                        <img src="img/section03/best09.jpg" alt="">
+                                        <img src="img/section03/best09.png" alt="">
                                         <div class="badge_container">
-                                            <span class="badge_official-inline"></span>
-                                            <span class="badge_vegan-inline"></span>
                                         </div><!-- .badge end -->
                                         <button class="btn-cart">
                                             <img src="img/icon/icon_cart.svg" alt="">
@@ -431,10 +420,8 @@
                             <div class="swiper-slide item">
                                 <a href="#">
                                     <div class="product_img">
-                                        <img src="img/section03/best10.jpg" alt="">
+                                        <img src="img/section03/best10.png" alt="">
                                         <div class="badge_container">
-                                            <span class="badge_official-inline"></span>
-                                            <span class="badge_vegan-inline"></span>
                                         </div><!-- .badge end -->
                                         <button class="btn-cart">
                                             <img src="img/icon/icon_cart.svg" alt="">
@@ -454,10 +441,8 @@
                             <div class="swiper-slide item">
                                 <a href="#">
                                     <div class="product_img">
-                                        <img src="img/section03/best11.jpg" alt="">
+                                        <img src="img/section03/best11.png" alt="">
                                         <div class="badge_container">
-                                            <span class="badge_official-inline"></span>
-                                            <span class="badge_vegan-inline"></span>
                                         </div><!-- .badge end -->
                                         <button class="btn-cart">
                                             <img src="img/icon/icon_cart.svg" alt="">
@@ -477,10 +462,9 @@
                             <div class="swiper-slide item">
                                 <a href="#">
                                     <div class="product_img">
-                                        <img src="img/section03/best12.jpg" alt="">
+                                        <img src="img/section03/best12.png" alt="">
                                         <div class="badge_container">
-                                            <span class="badge_official-inline"></span>
-                                            <span class="badge_vegan-inline"></span>
+                                            <span class="badge_vegan-inline-inline">Vegan</span>
                                         </div><!-- .badge end -->
                                         <button class="btn-cart">
                                             <img src="img/icon/icon_cart.svg" alt="">
@@ -500,10 +484,9 @@
                             <div class="swiper-slide item">
                                 <a href="#">
                                     <div class="product_img">
-                                        <img src="img/section03/best13.jpg" alt="">
+                                        <img src="img/section03/best13.png" alt="">
                                         <div class="badge_container">
-                                            <span class="badge_official-inline"></span>
-                                            <span class="badge_vegan-inline"></span>
+                                            <span class="badge_vegan-inline-inline">Vegan</span>
                                         </div><!-- .badge end -->
                                         <button class="btn-cart">
                                             <img src="img/icon/icon_cart.svg" alt="">
@@ -523,10 +506,9 @@
                             <div class="swiper-slide item">
                                 <a href="#">
                                     <div class="product_img">
-                                        <img src="img/section03/best14.jpg" alt="">
+                                        <img src="img/section03/best14.png" alt="">
                                         <div class="badge_container">
-                                            <span class="badge_official-inline"></span>
-                                            <span class="badge_vegan-inline"></span>
+                                            <span class="badge_vegan-inline-inline">Vegan</span>
                                         </div><!-- .badge end -->
                                         <button class="btn-cart">
                                             <img src="img/icon/icon_cart.svg" alt="">
@@ -546,10 +528,9 @@
                             <div class="swiper-slide item">
                                 <a href="#">
                                     <div class="product_img">
-                                        <img src="img/section03/best15.jpg" alt="">
+                                        <img src="img/section03/best15.png" alt="">
                                         <div class="badge_container">
-                                            <span class="badge_official-inline"></span>
-                                            <span class="badge_vegan-inline"></span>
+                                            <span class="badge_vegan-inline-inline">Vegan</span>
                                         </div><!-- .badge end -->
                                         <button class="btn-cart">
                                             <img src="img/icon/icon_cart.svg" alt="">
@@ -569,10 +550,9 @@
                             <div class="swiper-slide item">
                                 <a href="#">
                                     <div class="product_img">
-                                        <img src="img/section03/best16.jpg" alt="">
+                                        <img src="img/section03/best16.png" alt="">
                                         <div class="badge_container">
-                                            <span class="badge_official-inline"></span>
-                                            <span class="badge_vegan-inline"></span>
+                                            <span class="badge_vegan-inline-inline">NEW</span>
                                         </div><!-- .badge end -->
                                         <button class="btn-cart">
                                             <img src="img/icon/icon_cart.svg" alt="">
