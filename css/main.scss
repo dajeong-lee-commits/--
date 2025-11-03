@@ -27,6 +27,7 @@ h2 {
 p {
     font-weight: 400;
 }
+
 .main_btn-inline {
     font-size: 1.6rem;
     padding: 5px 16px;
@@ -36,20 +37,24 @@ p {
     display: inline-flex;
     align-items: center;
 }
+
 .main_btn-inline:hover {
     background-color: #333333;
     color: white;
     transition: 0.2s;
 }
+
 #footer .inner,
 .section .inner {
     max-width: 1200px;
     width: 100%;
     width: calc(100% - 80px);
     margin: 0 auto;
+
     .title_wrap {
         text-align: center;
     }
+
     .text {
         p {
             text-align: center;
@@ -64,6 +69,7 @@ p {
     display: block;
     object-fit: cover;
 }
+
 /* 쓸때 @include imgBox; */
 @mixin flexBox {
     display: flex;
@@ -76,27 +82,32 @@ p {
     width: 100%;
     position: fixed;
     z-index: 99;
+
     .inner {
         height: 80px;
         @include flexBox;
         padding: 0 40px;
         position: relative;
+
         .logo {
             width: 140px;
             position: absolute;
             left: 50%;
             transform: translateX(-50%);
             line-height: 80px;
+
             img {
                 @include imgBox;
             }
         }
+
         .nav_pc {
             .gnb {
                 display: flex;
                 gap: 2rem;
 
-                > li {
+                >li {
+
                     /* position: relative; */
                     .depth01-inline {
                         font-size: 1.6rem;
@@ -105,6 +116,7 @@ p {
                         align-items: center;
                         height: 80px;
                     }
+
                     .depth-02 {
                         min-width: 120px;
                         background-color: #ffffff77;
@@ -112,8 +124,10 @@ p {
                         top: 100%;
                         padding: 0 20px;
                         display: none;
+
                         li {
                             height: 34px;
+
                             a {
                                 height: 100%;
                                 line-height: 34px;
@@ -125,6 +139,7 @@ p {
                 }
             }
         }
+
         .util_pc {
             display: flex;
             align-items: center;
@@ -133,18 +148,21 @@ p {
                 display: flex;
                 gap: 6rem;
                 margin-right: 4rem;
+
                 li {
                     a {
                         font-size: 1.6rem;
                     }
                 }
             }
+
             .search_box {
                 margin-right: 2rem;
                 height: 24px;
                 display: flex;
                 align-items: center;
                 border-bottom: 1px solid #333333;
+
                 .input_txt {
                     width: 120px;
                     padding: 0;
@@ -152,21 +170,27 @@ p {
                     background: none;
                     outline: none;
                 }
+
                 .input_txt:focus-visible {
-                    border-color: #3b82f6; /* 예시: 파란 테두리 */
+                    border-color: #3b82f6;
+                    /* 예시: 파란 테두리 */
                     box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.4);
                 }
+
                 .input_txt:focus {
                     outline: none;
                     box-shadow: none;
                 }
+
                 .search_btn-inline {
                     cursor: pointer;
+
                     img {
                         @include imgBox();
                     }
                 }
             }
+
             .icon_menu {
                 display: flex;
                 gap: 2rem;
@@ -177,10 +201,12 @@ p {
 
                     .btn_cart {
                         cursor: pointer;
+
                         img {
                             @include imgBox;
                         }
                     }
+
                     a {
                         img {
                             @include imgBox;
@@ -189,9 +215,11 @@ p {
                 }
             }
         }
+
         .mobile {
             display: none;
         }
+
         .nav_mobile {
             position: fixed;
             top: 60px;
@@ -228,13 +256,16 @@ p {
         flex-direction: column;
         align-items: center;
         gap: 4rem;
+
         .title_wrap {
             h2 {
                 margin-bottom: 0.4rem;
             }
         }
+
         .image_wrap {
             position: relative;
+
             img {
                 position: absolute;
                 object-fit: cover;
@@ -242,15 +273,19 @@ p {
         }
     }
 }
+
 .section01 {
     padding: 10rem 0 5rem;
+
     .image_wrap {
         width: 100%;
         height: 797px;
+
         .img_left-inline {
             width: 84%;
             height: 533px;
         }
+
         .img_right-inline {
             width: 32%;
             height: 530px;
@@ -260,10 +295,12 @@ p {
         }
     }
 }
+
 .section02 {
     .image_wrap {
         width: 100%;
         height: 959px;
+
         .img_left-inline {
             width: 44.16%;
             height: 384px;
@@ -271,6 +308,7 @@ p {
             border-radius: 200px;
             z-index: 1;
         }
+
         .img_right-inline {
             width: 49%;
             height: 767px;
@@ -279,15 +317,19 @@ p {
         }
     }
 }
+
 .section03 {
     padding: 20rem 0 20rem;
+
     .inner {
         .title_wrap {
             h2 {
                 margin-bottom: 4rem;
             }
+
             .swiper.mySwiper {
                 padding-bottom: 20px;
+
                 .swiper-wrapper {
                     .swiper-slide {
                         a {
@@ -297,9 +339,11 @@ p {
                                 overflow: hidden;
                                 position: relative;
                                 margin-bottom: 1rem;
+
                                 img {
                                     @include imgBox;
                                 }
+
                                 .badge_container {
                                     position: absolute;
                                     top: 0;
@@ -324,11 +368,13 @@ p {
                                         border-radius: 50%;
                                         line-height: 1.2;
                                     }
+
                                     .badge_vegan-inline {
                                         background-color: #7fa06f;
                                         margin-top: -0.8rem;
                                     }
                                 }
+
                                 .btn-cart {
                                     position: absolute;
                                     background-color: #ffffffa1;
@@ -342,6 +388,7 @@ p {
                                     align-items: center;
                                     border-radius: 10px;
                                     cursor: pointer;
+
                                     img {
                                         width: 24px;
                                         height: 24px;
@@ -350,20 +397,24 @@ p {
                                     }
                                 }
                             }
+
                             .product_info {
                                 display: flex;
                                 flex-direction: column;
                                 align-items: start;
                                 gap: 0.5rem;
+
                                 h3 {
                                     font-size: 1.6rem;
                                     text-align: left;
                                 }
-                                > span {
+
+                                >span {
                                     font-size: 1.4rem;
                                     position: relative;
                                 }
-                                > span::before {
+
+                                >span::before {
                                     content: "";
                                     width: 100%;
                                     height: 60%;
@@ -373,18 +424,22 @@ p {
                                     position: absolute;
                                     background-color: #f7dde2;
                                 }
+
                                 .price {
                                     display: flex;
                                     flex-wrap: wrap;
                                     align-items: center;
                                     gap: 0.5rem;
+
                                     .discount-inline {
                                         font-weight: 700;
                                         color: #cf7185;
                                     }
+
                                     strong {
                                         font-weight: 700;
                                     }
+
                                     del {
                                         font-size: 1.2rem;
                                         color: #888888;
@@ -394,8 +449,8 @@ p {
                         }
                     }
                 }
-                .swiper-scrollbar {
-                }
+
+                .swiper-scrollbar {}
             }
         }
     }
@@ -404,11 +459,13 @@ p {
 #footer {
     background-color: #f7dde2;
     padding: 40px 0;
+
     .inner {
         display: flex;
         justify-content: space-between;
         font-size: 1.4rem;
         font-weight: 400;
+
         .footer-left {
             .footer_logo-inline {
                 width: 102px;
@@ -420,19 +477,23 @@ p {
                     @include imgBox;
                 }
             }
+
             p {
                 font-size: 1.3rem;
             }
         }
+
         .footer-right {
             display: flex;
             gap: 4rem;
+
             li {
                 .depth-01 {
                     font-size: 1.6rem;
                     font-weight: 700;
                     margin-bottom: 1rem;
                 }
+
                 .depth-02 {
                     display: flex;
                     flex-direction: column;
@@ -442,11 +503,13 @@ p {
         }
     }
 }
+
 @media screen and (max-width: 1200px) {
     #header .inner {
         height: 60px;
         padding: 0 40px;
         position: relative;
+
         .logo {
             width: 100px;
             position: static;
@@ -454,12 +517,15 @@ p {
 
             line-height: 60px;
         }
+
         .pc {
             display: none;
         }
+
         .mobile {
             display: block;
         }
+
         .nav_mobile {
             display: none;
         }
@@ -486,21 +552,33 @@ p {
         margin: 0 auto;
     }
 
-    /* 다시쓰기 */
+    #main {
+        .main_visual {
+            .bg-video {
+                transform: rotate(90deg);
+                transform-origin: center center; // 중심 기준 회전
+            }
+        }
+    }
+
     .section03 {
         padding: 6rem 0 6rem;
+
         .inner {
             .title_wrap {
                 h2 {
                     margin-bottom: 2rem;
                 }
+
                 .swiper.mySwiper {
+
                     /*  padding-bottom: 20px; */
                     .swiper-wrapper {
                         .swiper-slide {
                             a {
                                 .product_img {
                                     height: 200px;
+
                                     .badge_container {
                                         font-size: 1.1rem;
                                         font-weight: 300;
@@ -513,29 +591,37 @@ p {
                                             height: 44px;
                                         }
                                     }
+
                                     .btn-cart {
                                         width: 36px;
                                         height: 36px;
                                         margin: 0.8rem;
+
                                         img {
                                             width: 20px;
                                             height: 20px;
                                         }
                                     }
                                 }
+
                                 .product_info {
                                     gap: 0;
+
                                     h3 {
                                         font-size: 1.4rem;
                                     }
-                                    > span {
+
+                                    >span {
                                         font-size: 1.1rem;
                                     }
+
                                     .price {
                                         gap: 0.3rem;
+
                                         strong {
                                             font-weight: 700;
                                         }
+
                                         del {
                                             font-size: 1.1rem;
                                         }
@@ -544,20 +630,21 @@ p {
                             }
                         }
                     }
-                    .swiper-scrollbar {
-                    }
+
+                    .swiper-scrollbar {}
                 }
             }
         }
     }
 
-    /* 다시쓰기 */
 
     #header .inner {
         padding: 0 20px;
     }
+
     #footer {
         padding: 20px 0;
+
         .inner {
             width: calc(100% - 40px);
             flex-direction: column;
@@ -569,22 +656,27 @@ p {
                 .footer_logo-inline {
                     margin-bottom: 4px;
                 }
+
                 p {
                     font-size: 1.2rem;
+
                     br {
                         display: none;
                     }
                 }
             }
+
             .footer-right {
                 flex-direction: column;
                 gap: 2rem;
+
                 li {
                     .depth-01 {
                         font-size: 1.4rem;
                         font-weight: 700;
                         margin-bottom: 0.5rem;
                     }
+
                     .depth-02 {
                         gap: 0;
                     }
