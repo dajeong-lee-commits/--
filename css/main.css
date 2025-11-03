@@ -32,8 +32,9 @@ p {
   border-radius: 50px;
   border: 1px solid #333333;
   text-align: center;
-  display: block;
+  display: inline-flex;
   line-height: 1.5;
+  align-items: center;
 }
 
 .main_btn-inline:hover {
@@ -298,11 +299,11 @@ p {
   font-size: 1.2rem;
   font-weight: 300;
   display: flex;
+  flex-direction: column;
   padding: 1.6rem;
-  gap: 0.8rem;
 }
 .section03 .inner .title_wrap .swiper.mySwiper .swiper-wrapper .swiper-slide a .product_img .badge_container .badge_member-inline,
-.section03 .inner .title_wrap .swiper.mySwiper .swiper-wrapper .swiper-slide a .product_img .badge_container .badge_vegan-inline-inline {
+.section03 .inner .title_wrap .swiper.mySwiper .swiper-wrapper .swiper-slide a .product_img .badge_container .badge_vegan-inline {
   width: 48px;
   height: 48px;
   background-color: #cf7185;
@@ -313,8 +314,9 @@ p {
   border-radius: 50%;
   line-height: 1.2;
 }
-.section03 .inner .title_wrap .swiper.mySwiper .swiper-wrapper .swiper-slide a .product_img .badge_container .badge_vegan-inline-inline {
+.section03 .inner .title_wrap .swiper.mySwiper .swiper-wrapper .swiper-slide a .product_img .badge_container .badge_vegan-inline {
   background-color: #7fa06f;
+  margin-top: -0.8rem;
 }
 .section03 .inner .title_wrap .swiper.mySwiper .swiper-wrapper .swiper-slide a .product_img .btn-cart {
   position: absolute;
@@ -349,6 +351,17 @@ p {
 }
 .section03 .inner .title_wrap .swiper.mySwiper .swiper-wrapper .swiper-slide a .product_info > span {
   font-size: 1.4rem;
+  position: relative;
+}
+.section03 .inner .title_wrap .swiper.mySwiper .swiper-wrapper .swiper-slide a .product_info > span::before {
+  content: "";
+  width: 100%;
+  height: 60%;
+  bottom: 0;
+  z-index: -1;
+  display: block;
+  position: absolute;
+  background-color: #f7dde2;
 }
 .section03 .inner .title_wrap .swiper.mySwiper .swiper-wrapper .swiper-slide a .product_info .price {
   display: flex;
@@ -368,7 +381,7 @@ p {
   color: #888888;
 }
 #footer {
-  background-color: #f0ccd4;
+  background-color: #f7dde2;
   padding: 40px 0;
 }
 #footer .inner {
@@ -462,13 +475,11 @@ p {
   .section03 .inner .title_wrap .swiper.mySwiper .swiper-wrapper .swiper-slide a .product_img .badge_container {
     font-size: 1.1rem;
     font-weight: 300;
-    display: flex;
-    flex-direction: column;
     padding: 0.8rem;
-    gap: 0.8rem;
+    gap: 0;
   }
   .section03 .inner .title_wrap .swiper.mySwiper .swiper-wrapper .swiper-slide a .product_img .badge_container .badge_member-inline,
-  .section03 .inner .title_wrap .swiper.mySwiper .swiper-wrapper .swiper-slide a .product_img .badge_container .badge_vegan-inline-inline {
+  .section03 .inner .title_wrap .swiper.mySwiper .swiper-wrapper .swiper-slide a .product_img .badge_container .badge_vegan-inline {
     width: 44px;
     height: 44px;
   }
