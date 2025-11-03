@@ -28,16 +28,20 @@
     <script>
         window.onload = () => {
             var swiper = new Swiper(".mySwiper", {
-                slidesPerView: 4,
-                spaceBetween: 20,
+                slidesPerView: 2,
+                spaceBetween: 16,
                 scrollbar: {
                     el: ".swiper-scrollbar",
                     hide: true,
                 },
                 breakpoints: {
-                    1024: { slidesPerView: 4 }, // 데스크탑
-                    768: { slidesPerView: 2 }, // 태블릿
-                    480: { slidesPerView: 1 }, // 모바일
+                    1024: {
+                        slidesPerView: 4,
+                        spaceBetween: 24,
+
+                    }, // 데스크탑
+                    768: { slidesPerView: 3 }, // 태블릿
+                    480: { slidesPerView: 2 }, // 모바일
                 },
             });//section-03 베스트 상품 슬라이드
         };
