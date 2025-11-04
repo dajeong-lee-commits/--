@@ -61,7 +61,7 @@ p {
 /* 공통 요소 */
 /* 쓸때 @include imgBox; */
 #header {
-  background-color: rgba(255, 255, 255, 0.4666666667);
+  background-color: rgba(255, 255, 255, 0.5607843137);
   width: 100%;
   position: fixed;
   z-index: 99;
@@ -104,7 +104,7 @@ p {
 }
 #header .inner .nav_pc .gnb > li .depth-02 {
   min-width: 120px;
-  background-color: rgba(255, 255, 255, 0.4666666667);
+  background-color: rgba(255, 255, 255, 0.5607843137);
   position: absolute;
   top: 100%;
   padding: 0 20px;
@@ -218,6 +218,22 @@ p {
 }
 #main .main_visual .bg-video.mobile {
   display: none;
+}
+#main .main_visual .visual_title {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+#main .main_visual .visual_title h2 {
+  font-size: 8rem;
+  margin-bottom: 0.8rem;
+}
+#main .main_visual .visual_title h3 {
+  font-size: 2.4rem;
+  font-weight: 300;
 }
 
 .section01and02 .inner {
@@ -452,8 +468,33 @@ p {
   #header .inner .nav_mobile {
     display: none;
   }
+} /* 분기점 1200px 이하 헤더 스타일 변경 */
+@media screen and (min-width: 769px) and (max-width: 1039px) {
+  .section01 .image_wrap {
+    height: 638px;
+  }
+  .section01 .image_wrap .img_left-inline {
+    height: 426px;
+  }
+  .section01 .image_wrap .img_right-inline {
+    height: 424px;
+    border-radius: 200px;
+  }
+  .section02 .image_wrap {
+    height: 767px;
+  }
+  .section02 .image_wrap .img_left-inline {
+    height: 307px;
+  }
+  .section02 .image_wrap .img_right-inline {
+    height: 613px;
+  }
 }
+/* 태블릿 사이즈 section 01,02 이미지 레이아웃 변경 */
 @media screen and (max-width: 768px) {
+  br {
+    display: none;
+  }
   body {
     font-size: 1.4rem;
   }
@@ -475,60 +516,44 @@ p {
   #main .main_visual .bg-video.mobile {
     display: block;
   }
-  /* 다시쓰기 */
-  .section01and02 .inner {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 4rem;
+  #main .main_visual .visual_title h2 {
+    font-size: 4rem;
+    margin-bottom: 0.8rem;
   }
-  .section01and02 .inner .title_wrap h2 {
-    margin-bottom: 0.4rem;
+  #main .main_visual .visual_title h3 {
+    font-size: 1.6rem;
+  }
+  #header .inner {
+    padding: 0 20px;
+  }
+  /* 다시쓰기 */
+  .section01 {
+    padding: 6rem 0;
+  }
+  .section01 .img_right-inline {
+    display: none;
+  }
+  .section01and02 .inner {
+    gap: 2rem;
   }
   .section01and02 .inner .image_wrap {
-    position: relative;
+    position: static;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    height: auto;
   }
   .section01and02 .inner .image_wrap img {
-    position: absolute;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  .section01 {
-    padding: 10rem 0 5rem;
-  }
-  .section01 .image_wrap {
+    position: static;
     width: 100%;
-    height: 354px;
+    height: 300px;
+    border-radius: 10px;
+    top: auto;
+    bottom: auto;
+    left: auto;
+    right: auto;
+    transform: none;
   }
-  .section01 .image_wrap .img_left-inline {
-    width: 84%;
-    height: 237px;
-  }
-  .section01 .image_wrap .img_right-inline {
-    width: 32%;
-    height: 234px;
-    bottom: 0;
-    right: 0;
-    border-radius: 200px;
-  }
-  .section02 .image_wrap {
-    width: 100%;
-    height: 493px;
-  }
-  .section02 .image_wrap .img_left-inline {
-    width: 44.16%;
-    height: 197px;
-    bottom: 0;
-    border-radius: 200px;
-    z-index: 1;
-  }
-  .section02 .image_wrap .img_right-inline {
-    width: 49%;
-    height: 394px;
-    left: 100%;
-    transform: translateX(-100%);
-  }
-  /* 다시쓰기 */
   .section03 {
     padding: 6rem 0 6rem;
   }
@@ -579,9 +604,6 @@ p {
   .section03 .inner .title_wrap .swiper.mySwiper .swiper-wrapper .swiper-slide a .product_info .price del {
     font-size: 1.1rem;
   }
-  #header .inner {
-    padding: 0 20px;
-  }
   #footer {
     padding: 20px 0;
   }
@@ -613,4 +635,5 @@ p {
   #footer .inner .footer-right li .depth-02 {
     gap: 0;
   }
-}/*# sourceMappingURL=main.css.map */
+}
+/* 다시쓰기 *//*# sourceMappingURL=main.css.map */
